@@ -1,0 +1,165 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  @apply bg-slate-200
+}
+
+.responsive-width {
+  @apply xl:w-[70vw] md:w-[80vw] w-[92vw]
+}
+
+.header {
+  @apply bg-white text-3xl py-3 drop-shadow-xl
+}
+
+.input-json-box {  
+  @apply h-[50vh] grow resize-none bg-green-50 px-5 py-3 rounded-lg drop-shadow-md focus:outline-none;
+  width: 0px !important;
+}
+
+.output-json-editor-box {
+  @apply h-[50vh] overflow-y-scroll p-5 rounded-lg drop-shadow-md border-2 bg-white;
+}
+
+.output-json-view-box {
+  @apply h-[50vh] grow resize-none bg-red-50 px-5 py-3 rounded-lg drop-shadow-md focus:outline-none;
+}
+
+.json-editor-input-field {
+  @apply grow px-1 focus:outline-none
+}
+
+.input-group {
+  @apply my-2 mx-2 flex flex-col
+}
+
+.input-text {
+  @apply rounded-lg px-2 py-1 text-sm border border-slate-300 rounded-lg drop-shadow-md;
+}
+
+.input-text:focus {
+  @apply outline-none border-green-500
+}
+
+.input-textarea {
+  @apply input-text;  
+}
+
+.input-label {
+  @apply text-xs font-semibold
+}
+
+.button {
+  @apply text-xs px-2 py-1 rounded-md drop-shadow font-bold
+}
+
+.button-green {
+  @apply button bg-green-600 text-white
+}
+
+.button-black {
+  @apply button bg-black text-white
+}
+
+.collapse-toggle-button {
+  @apply button-black rounded-full font-bold
+}
+
+.json-editor-block {
+  @apply px-3 py-2 border-2 rounded-lg my-1
+}
+
+.editor-editable {
+  @apply json-editor-block border-red-500 text-red-500 bg-red-100
+}
+
+.editor-collapsable {
+  /* @apply json-editor-block border-yellow-500 text-yellow-500 bg-yellow-100 */
+  @apply json-editor-block
+}
+
+.tab-space {
+  padding-left: 20px;
+}
+
+.collapse-toggle-group {
+  @apply flex flex-row items-center cursor-pointer
+}
+
+.collapse-toggle-button {
+  @apply h-[15px] w-[15px] mr-1 flex items-center justify-center
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.tab-space {
+  padding-left: 20px;
+}
+
+.container {
+  padding: 50px 20px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container > div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.border-box {
+  border: solid 1px black;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.endpoint-box {
+  padding: 2px 5px;
+  width: 20vw;
+}
+
+.hidden {
+  display: none;
+}
+
+.collapse-toggle-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: -20px;
+}
+
+.edit-json-field {
+  border: none;
+  width: 80%;
+}
+
+.edit-json-field:focus {
+  outline: none;
+}
+
+.input-label {
+  font-style: italic;
+} */
